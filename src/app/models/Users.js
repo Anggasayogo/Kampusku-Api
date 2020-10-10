@@ -1,18 +1,16 @@
-const { text } = require('body-parser');
 const mongoose = require('mongoose');
 
 const Schema = mongoose.Schema;
 
 const UsersSchema = Schema({
-    'id_users' : getSequenceNextValue("itemId"),
     'nama_user' : {type : String},
     'nim' : {type : String},
     'prodi' : {type : String},
     'email' : {type : String},
     'password' : {type : String},
-    'addres' : {type : text},
-    'id_kelas' : {type : BigInt},
-    'id_role' : {type : BigInt},
+    'addres' : {type : String},
+    'id_kelas' : {type : String},
+    'id_role' : {type : String},
 });
 
 module.exports = mongoose.model("users",UsersSchema);
