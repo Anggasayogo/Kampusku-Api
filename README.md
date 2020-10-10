@@ -30,3 +30,8 @@ npm run dev
 - [ ] Refactotoring Code
 - [ ] Lengkapi Readme.md file
 - [ ] dll
+
+
+## Design Table
+
+![designtabe](assets/image/designtabe.png)
