@@ -1,12 +1,25 @@
 const Users = require("../../models/Users")
 
-exports.index = (req,res)=>{
-    return res.status(200).json({
-        "work" : "itworks"
+exports.show = (req,res)=>{
+    Users.find({},(err,result)=>{
+        if(err){
+            return res.status(500).json({
+                status : false,
+                message : err,
+                data : null,
+            })
+        }else{
+            return res.status(201).json({
+                status : true,
+                message : "data hass geted!",
+                data : result,
+            })
+        }
     })
 }
 
-exports.login = (req,res)=>{
+
+exports.register = (req,res)=>{
     const data = {
         nama_user : req.body.nama,
         nim : req.body.nim,

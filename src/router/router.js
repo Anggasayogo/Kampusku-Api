@@ -7,8 +7,10 @@ const MapelController = require('../app/http/controllers/MapelController');
 
 router.get('/kelas',KelasController.index);
 router.get('/mapel',MapelController.index);
-router.get('/',UsersController.index);
-router.post('/login',UsersController.login);
+
+// users
+router.post('/register',UsersController.register);
+router.get('/users',UsersController.show);
 
 
 module.exports = router;
