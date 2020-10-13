@@ -26,7 +26,7 @@ npm run dev
 ```
 
 ## TODO
-- [ ] Menggunakan Database
+- [x] Menggunakan Database mongodb
 - [ ] Refactotoring Code
 - [ ] Lengkapi Readme.md file
 - [ ] dll
