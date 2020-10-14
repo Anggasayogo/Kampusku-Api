@@ -9,6 +9,9 @@ const UsersSchema = Schema({
     'email' : {type : String},
     'password' : {type : String},
     'addres' : {type : String},
+    'api_token' : {
+        type : String,
+    },
     'id_kelas' : {type : String},
     'id_role' : {type : String},
 });
